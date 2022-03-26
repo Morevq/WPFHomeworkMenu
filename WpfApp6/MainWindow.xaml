@@ -1,0 +1,43 @@
+﻿<Window x:Class="WpfApp6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp6"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="545" Width="800">
+    <Grid x:Name="grid" Background="White">
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="167,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="391" Height="37"/>
+        <Button x:Name="button" Content="Search" Margin="596,68,0,0" Click="button_Click" HorizontalAlignment="Left" Width="136" Height="37" VerticalAlignment="Top"/>
+        <TextBox x:Name="answerTaxtBox" HorizontalAlignment="Left" Margin="167,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="391" Height="288"/>
+        <Menu x:Name="menu" Margin="0,0,0,466" d:LayoutOverrides="HorizontalAlignment">
+            <MenuItem Height="29" Header="_Visual Settings" Width="94">
+                <MenuItem Header="color of background">
+                    <RadioButton Content="red" Click="RadioButton_Click"/>
+                    <RadioButton Content="blue" Click="RadioButton_Click_1"/>
+                    <RadioButton Content="white" Click="RadioButton_Click_2"/>
+                </MenuItem>
+                <MenuItem Header="color of menu">
+                    <RadioButton Content="yellow" Click="RadioButton_Click_3"/>
+                    <RadioButton Content="gray" Click="RadioButton_Click_4"/>
+                    <RadioButton Content="green" Click="RadioButton_Click_5"/>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem x:Name="menuItem" Height="28" Header="_History" Width="82">
+                <MenuItem/>
+                <MenuItem/>
+                <MenuItem/>
+                <MenuItem/>
+                <MenuItem/>
+                <MenuItem/>
+                <MenuItem/>
+                <MenuItem/>
+                <MenuItem/>
+                <MenuItem/>
+                <MenuItem/>
+                <MenuItem/>
+            </MenuItem>
+        </Menu>
+
+    </Grid>
+</Window>
